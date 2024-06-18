@@ -1,0 +1,119 @@
+body {
+  text-align: center;
+  background-color: black;
+  font-family: sans-serif;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+#editor {
+  margin: 0 auto 10px;
+  height: 180px;
+  width: 40vw;
+  background-color: #2c2c2c;
+  border: none;
+  color: GhostWhite;
+  padding: 10px;
+  resize: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.header {
+  color: #62ad99;
+  padding: 10px;
+  font-size: 20px;
+  margin: 10px auto 0;
+  position: relative;
+ }
+
+#preview {
+  width: 60vw;
+  min-height: 200px;
+  margin: 0 auto;
+  background-color: #2c2c2c;
+  color: GhostWhite;
+  text-align: left;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+h1::after, h2:not(.header)::after {
+  content: "";
+  display: block;
+  border: 1px solid GhostWhite;
+  margin: 10px 0;
+}
+
+p, li {
+  color: GhostWhite;
+  font-size: 14px;
+  margin: 9px 0;
+}
+
+img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+table, th, td {
+  border: 1px solid white;
+  margin: 7px;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th, td {
+  padding: 3px 0;
+}
+
+table {
+  width: 75%;
+}
+
+a {
+  color: #62ad99;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline
+}
+
+code {
+  background-color: #bdcbbf;
+  padding: 2px;
+  color: black;
+  border-radius: 4px;
+}
+
+pre code {
+  display: block;
+  padding: 10px;
+}
+
+blockquote p::before {
+  content: "|   ";
+  font-size: 16px;
+}
+
+blockquote p {
+  margin: 0 auto;
+}
+
+button {
+  position: absolute;
+  right: 30%;
+  bottom: 10px;
+  background-color: #62ad99;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 95%
+}
